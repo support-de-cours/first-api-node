@@ -1,0 +1,65 @@
+URL : Uniform Resouce Locator       (ex: http://site.com/path/to/file.html)
+URI : Uniform Resouce Indetifier    (ex: www.site.com/path/to/file.html#top)
+URN : Uniform Resource Name         (ex: :123456789)
+
+http://site.com/path/to/file.html?param1=value1&param2=value2#param1=value1&param2=value2
+https://site.com/path/to/file.html?param1=value1&param2=value2#param1=value1&param2=value2
+https://www.site.com/path/to/file.html?param1=value1&param2=42#param1=value1&param2=value2
+https://www.site.com/path/to/file.html?param1=value1&param2=value2#top
+sftp://john:12345@site.com/path/to/my-dir
+john@site.com 
+
+
+scheme                  http, https, sftp, ssh, mms, tel, skype, itunes, ...
+protocol                http://, https://, ...
+
+Nom de domaine              site.com
+                        www.site.com 
+TLD Top Level Domain    .com  
+Domain                  site 
+SubDomain               www.
+
+Path                    /path/to/file.html      Chemin vers un fichier ou répertoire
+                        /path/to/my-dir
+File                    file.html
+FileName                file 
+Extension               .html 
+Directory / Folder      my-dir
+
+?                       Séparateur de paramètres transmis au serveur
+#                       Séparateur de paramètres transmis au client
+                        Ou Ancre <a href="#top"> pointe vers <div id="top">
+
+Parametres              param1=value1&param2=value2 (key=value)
+&                       Séparateur de paramètres
+
+
+
+
+sftp://john:12345@site.com/path/to/my-dir
+john@site.com 
+user@server
+
+
+Username                john
+:                       Séparateur User / Password
+Password                12345
+@                       Cible le serveur site.com
+
+
+
+
+site.com/books?id=4
+
+  protocol: null,
+  slashes: null,
+  auth: null,
+  host: null,
+  port: null,
+  hostname: null,
+  hash: null,
+  search: '?id=4',
+  query: [Object: null prototype] { id: '4' },
+  pathname: '/',
+  path: '/books?id=4',
+  href: 'site.com/books?id=4'
